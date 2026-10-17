@@ -2,7 +2,7 @@
 
 A dark, neon-themed personal portfolio showcasing my full-stack and data analytics work, with case studies, tech stacks, live demos and a downloadable resume.
 
-**Live site:** https://YOUR-PORTFOLIO-URL.vercel.app
+**Live site:** https://haroon-portfolio-eight.vercel.app/
 
 ## Features
 
