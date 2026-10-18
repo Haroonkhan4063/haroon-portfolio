@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@700;800&display=swap');
+@tailwind base;@tailwind components;@tailwind utilities;
+html{scroll-behavior:smooth;scroll-padding-top:5rem}
+body{@apply bg-ink text-slate-300 font-body antialiased;background-image:linear-gradient(rgba(34,211,238,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(168,85,247,.035) 1px,transparent 1px);background-size:44px 44px}
+::selection{background:#a855f7;color:#fff}
+.ring{background:conic-gradient(from 0deg,#22d3ee,#a855f7,#22d3ee);animation:spin 7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.grad{background:linear-gradient(90deg,#22d3ee,#a855f7);-webkit-background-clip:text;background-clip:text;color:transparent}
+.btn{@apply inline-flex items-center justify-center rounded-lg px-5 py-3 text-sm font-bold transition duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan}
+.btn-p{@apply bg-gradient-to-r from-cyan to-violet text-ink hover:shadow-[0_0_28px_rgba(34,211,238,.5)]}
+.btn-g{@apply border border-line text-white hover:border-cyan hover:shadow-[0_0_22px_rgba(168,85,247,.45)]}
+.card{@apply rounded-2xl border border-line bg-panel/80 backdrop-blur transition duration-300 hover:border-violet/70 hover:shadow-[0_0_40px_rgba(168,85,247,.18)]}
+.chip{@apply rounded-full border border-cyan/30 bg-cyan/10 px-3 py-1 text-xs font-semibold text-cyan}
+.logo{font-family:"Outfit",sans-serif}
+@media (prefers-reduced-motion:reduce){.ring{animation:none}html{scroll-behavior:auto}}
